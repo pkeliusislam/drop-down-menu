@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop down menu</title>
+    <style>
+        .navber{
+            background-color: aquamarine;
+            padding: 2% 5%;
+            text-align: center;
+            
+        }
+        .navber a{
+            color: hotpink;
+            font-size: 1.5rem;
+            padding: 50px 7px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .dropdown-container{
+            display: inline;
+            position: relative;
+        }
+        .dropdown-content{
+            position: absolute;
+            top: 30px;
+            right: 0px;
+            background-color: gray;
+            text-align: left;
+            min-width: 10px;
+            display: none;
+            line-height: 0;
+        }
+        .dropdown-content a{
+            display: block;
+            
+        }
+        .dropdown-container:hover .dropdown-content{
+            display: block;
+            background-color: blueviolet;
+        }
+        .dropdown-content a:hover{
+            background-color: aqua;
+        }
+        .navber a:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navber">
+        <a href="#">Home</a>
+        <a href="#">Class</a>
+        <a href="#">me</a>
+        <div class="dropdown-container">
+            <a href="#">contact</a>
+            <div class="dropdown-content">
+                <a href="#">phone</a>
+                <a href="#">email</a>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+                <a href="#">Google</a>
+            </div>
+        </div>
+        <a href="#">house</a>
+        <a href="#">Office</a>
+        <a href="#">stall</a>
+    </div>
+</body>
+</html>
